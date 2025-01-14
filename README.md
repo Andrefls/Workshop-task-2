@@ -35,6 +35,13 @@ task-2
 - After doing this, I chatted with lecture Leo using Discord.
 - I asked him about some troubles I had about loading my files, safari troubleshooting and also I asked him, if it was possible to write a note (instructions to follow) on the canvas.
 - He said yes. He recommended few options and then He also share a example I could use.
+
+'''fill(255, 255, 255);
+  rect(0,height -20, width, 25);
+  fill(0);
+  text('Create Art. Click to hold the frame. Double click to loop', 20, height - 8);''' 
+
+  
 - I am adding his example on my codes, I will tweek it a bit to work with my code.
 - I hope people enjoy my whole week work. 
 
