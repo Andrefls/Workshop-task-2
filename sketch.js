@@ -48,6 +48,11 @@ function draw() {
     }
   }
   y = y + ymove;
+  
+  fill(255, 255, 255);
+  rect(0,height -20, width, 25);
+  fill(0);
+  text('Create Art. Click to hold the frame. Double click to loop', 20, height - 8);  
 }
 
 function littlecirclesred(x, y, d) {
