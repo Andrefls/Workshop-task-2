@@ -1,50 +1,54 @@
 - link to the webpage https://andrefls.github.io/Workshop-task-2/
--# Workshop-task-2
-task-2
 
+...
+Synopsis
 
-- The idea I had when I started this workshop-task-2, was able to count or calculate the time of the bouncing balls explosion. By doing this, I will be able to re start the cycle.
-- Fisrt I watched our lecture video at https://canvas.auckland.ac.nz/courses/121821/pages/week-1-overview?module_item_id=2435967
-- I got very useful notes from the video.
-- I created my github account and also started working on it
-- I also downloaded and installed the VSCODIUM program and I had a little bit of a play there. However, I am still using https://p5js.org for my coding.
-- I started following the examples of the lecture, however, counter idea did not work for me.
-- Then I tried to use intervals but it also did not work for me.
-- Tired of trying with the examples I went to the the https://p5js.org/reference/ and start looking for some ideas to time my explosion.
-- After a long reading I could not find anything that work for me. So, I tought, it must be something but I may not know how to ask
-- So I went to Mr google. www.google.com and I ask if p5js has a reference to time intervals.
-- After few tries, I found a link to p5js reference millis ()
-- https://p5js.org/reference/p5/millis/
-- millis () was something I was looking for, however, the challenge begging when I did not understand how to use it.
-- first I tried to follow the instructions, after long try and for couple hours did not work.
-- I keep having this error
-- SyntaxError: Unexpected identifier 'explosionTime'. Expected ')' to end an 'if' condition and I just did not understand.
-- After reading couple of time more about millis, I realised that the function was getting the total of the frames or time after the explosion, so then, I start using mathematical functions, + / - and well minus was the one. It make sense, because what I wanted was that the after the explosion the cycle re start.
-- So I gave some values, so it will substract that value from millis and it work. :). However, I still have a lot question as if I changed the value to more than 460 like for example as Leo said in the workshop video 2 - 5000 mine wouldnt work. I just did not understand why?
-- After solving the problem of re starting the cycle and after watching my video. I found it a bit boring to wait for the cycle re start.
-- So I decided to add some functions. So, I went back to the video workshop 2 https://canvas.auckland.ac.nz/courses/121821/pages/week-1-overview?module_item_id=2435967 and I saw some functions with the mouse.
-- I said, lets make it interactive. Why? well, all my life I ll be keen of becoming an artist, so my ideas float around that dream.
-- if I can make people pause my animation, they will have a different image any time they pause it.
-- I went to https://p5js.org/reference/ and type Loop, because it was a loop what I wanted to be paused.
-- I found https://p5js.org/reference/p5/loop/
-- Then put the function together as follow
-- Mouseclick will stop the animation
-- two clicks will re start the cycle.
+When I started working on this workshop task, my goal was to calculate the time it takes for the bouncing balls to complete the explosion. This would allow me to add a couple of extra seconds for the explosion itself and then effectively restart the animation cycle.
 
-  
-- After doing this, I chatted with lecture Leo using Discord.
-- I asked him about some troubles I had about loading my files, safari troubleshooting and also I asked him, if it was possible to write a note (instructions to follow) on the canvas.
-- He said yes. He recommended few options and then He also share a example I could use.
+Additionally, I aimed to make the project interactive. I thought that by giving people the ability to stop the animation at any time, they could create unique moments, offering a new way to express art.
 
-'''fill(255, 255, 255);
-  rect(0,height -20, width, 25);
-  fill(0);
-  text('Create Art. Click to hold the frame. Double click to loop', 20, height - 8);''' 
+Summary/Problem-solving
 
-  
-- I am adding his example on my codes, I will tweek it a bit to work with my code.
-- I hope people enjoy my whole week work. 
+I first watched our lecture video at https://canvas.auckland.ac.nz/courses/121821/pages/week-1-overview?module_item_id=2435967. From the video, I took useful notes to create my GitHub account and download VSCodium, and I also started working on it.
 
-Thanks
+I began following the examples from our lecture, but I struggled with the counter and intervals concept. After getting frustrated with the examples, I went to https://p5js.org/reference/ to look for ideas to time my explosion.
 
+After extensive reading, I still couldn't find anything that worked for me. I thought there must be something out there, but I just wasn't sure how to ask about it. So, I decided to search on Google at www.google.com and asked if p5.js has a reference for time intervals.
 
+After several attempts, I found the p5.js reference for the millis() function at https://p5js.org/reference/p5/millis/. 
+
+This was exactly what I was looking for, but the challenge began when I struggled to understand how to use it. I followed the instructions, but after several hours of trying, I encountered the error: "SyntaxError: Unexpected identifier 'explosionTime.' Expected ')' to end an 'if' condition." This was confusing for me.
+
+After reading about millis() and analyzing the error a couple of times, I realized that the function was returning the total time cycle in milliseconds after the explosion. However, since there was no limit for the explosion time, the cycle kept running endlessly. I started incorporating mathematical functions like addition and division, and when I finally used the subtraction function, everything began to make sense. I subtracted a value from the infinite cycle to set a limit.
+
+I established a threshold by adding a value greater than or equal to the explosion time, so as long as the explosion time was less than or equal to 420, it would restart. However, I still had a lot of questions. For instance, if I changed the value to something higher than 460, like Leo suggested in the workshop video (for example, 5000 milliseconds), mine wouldn't work, and I didn’t understand why.
+After resolving the issue of the cycle restarting and watching my video, I found it a bit boring to wait for the cycle to restart. 
+
+I followed the canvas video at https://canvas.auckland.ac.nz/courses/121821/pages/week-1-overview?module_item_id=2435967 and noticed some functions involving the mouse. I thought if I could allow people to pause my animation, they would see a different image each time they paused it. 
+
+I searched for "loop" at https://p5js.org/reference/ because that was what I wanted to pause. I found the function at https://p5js.org/reference/p5/loop/. 
+
+I then combined the functions so that a mouse click would stop the animation, and a double click would restart the cycle. It worked perfectly! 
+
+I realized I needed to instruct viewers on how to interact with my video. Using Discord, I asked Leo if I could add some instructions on the canvas. He agreed, recommended a few options, and even shared an example I could use: 
+
+Image
+
+```javascript
+fill(255, 255, 255); 
+rect(0, height - 20, width, 25); 
+fill(0); 
+text('Create Art. Click to hold the frame. Double click to loop', 20, height - 8);
+```
+
+I integrated his example into my code and it fit in my project.
+
+Future development
+
+I'm still unclear about why, when I use a value over 420 in my millis function, the explosion continues indefinitely without reaching a limit to restart. I’ll need to read more about timing and cycles.
+I need to use VScodium more.
+
+Conclusion:
+
+I am still using https://p5js.org for my coding. 
+I learned a different way to handle timing using the new syntax called millis.
