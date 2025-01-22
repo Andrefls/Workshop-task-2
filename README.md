@@ -1,13 +1,14 @@
 - link to the webpage https://andrefls.github.io/Workshop-task-2/
 
+# Creating ART with bouncing balls
 ...
-Synopsis
+## Synopsis
 
 - When I started working on this workshop task, my goal was to calculate the time it takes for the bouncing balls to complete the explosion. This would allow me to add a couple of extra seconds for the explosion itself and then effectively restart the animation cycle.
 
 - Additionally, I aimed to make the project interactive. I thought that by giving people the ability to stop the animation at any time, they could create unique moments, offering a new way to express art.
 
-Summary/Problem-solving
+## Summary/Problem-solving
 
 - I first watched our lecture video at https://canvas.auckland.ac.nz/courses/121821/pages/week-1-overview?module_item_id=2435967. From the video, I took useful notes to create my GitHub account and download VSCodium, and I also started working on it.
 
@@ -63,12 +64,12 @@ text('Create Art. Click to hold the frame. Double click to loop', 20, height - 8
 
 - I integrated his example into my code and it fit in my project.
 
-Future development
+## Future development
 
 - I'm still unclear about why, when I use a value over 420 in my millis function, the explosion continues indefinitely without reaching a limit to restart. I’ll need to read more about timing and cycles.
 I need to use VScodium more.
 
-Conclusion:
+## Conclusion
 
 - I am still using https://p5js.org for my coding. 
 - I learned a different way to handle timing using the new syntax called millis.
