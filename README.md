@@ -1,7 +1,8 @@
-- link to the webpage https://andrefls.github.io/Workshop-task-2/
+Website Link https://andrefls.github.io/Workshop-task-2/
 
 # Creating ART with bouncing balls
-...
+
+
 ## Synopsis
 
 - When I started working on this workshop task, my goal was to calculate the time it takes for the bouncing balls to complete the explosion. This would allow me to add a couple of extra seconds for the explosion itself and then effectively restart the animation cycle.
